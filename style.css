@@ -1,0 +1,197 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    word-spacing: 4px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /*botando o display flex pra conseguir usar algumas propriedades de alinhamento*/
+    display: flex;
+    /*botando o comando pra conseguir fazer um "display-block" porem com as propriedades flex...*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(-90deg,black,rgb(255, 0, 0),black);
+}   
+
+/*configuração do primeiro cabeçalho aonde vai ficar a imagem*/
+header {
+    position: relative;
+    background-image: url(Untitled-4.png);
+    background-size: 100%;
+    background-position: center;
+    width: 900px;
+    height: 100px;
+}
+
+/*menu de navegação nav*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    max-width: 900px;
+    height: 30px;
+    /*esconte oque passar do raio da nav*/
+    overflow: hidden;
+
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+    
+}
+
+nav ul li a {
+    padding: 56px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: .3s;
+    
+
+}
+nav ul li a:hover {
+    background-color: rgb(32, 32, 32);
+    transition: .3s;
+}
+/*navegação da aba filmes*/
+.nav2{
+    display: none;
+}
+.menu_filmes:hover .nav2{
+    position: absolute;
+    display: block;
+    margin-top: 5.5px;
+    align-items: center;
+    width: 0px;
+}
+
+.nav2 li{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 183.5px;
+
+    
+
+}
+.nav2 li a{
+    width: 100%;
+    padding: 7px;
+    background-color: rgb(0, 0, 0);
+    
+}
+
+/*centro lado esquerdo e lado direito*/
+.principal {
+    /*definindo o display flex pra alinhar as divisoes de forma lateral*/
+    display: flex;
+    background-color: white;
+    /*definindo a largura e a altura, a altura 100vh é altura visivel ou seja a altura visivel*/
+    width: 900px;
+    height: 8000px;
+}
+
+/*config do centro*/
+.centro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    height: 8000px;
+}
+.centro button{
+    border: none;
+    cursor: pointer;
+    
+    
+}
+.centro a{
+ margin: 20px;
+}
+.centro h1 {
+    margin-top: 20px;
+    color: white;
+    background-image: linear-gradient(90deg,black,red,black);
+    box-shadow: 3px 3px 3px black;
+    padding: 20px;
+    height: 35px;
+    border-radius: 20px;
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 20px;
+}
+
+/*config do lado direito*/
+.ladoD {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    width: 15%;
+    height: 8000px;
+
+}
+
+
+.ladoD button {
+    margin-top: 40px;
+    border: none;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    border-radius: 15px;
+    align-items: center;
+   justify-content: center;
+   transition: .3s;
+}
+.ladoD button:hover{
+    box-shadow: 0 0px 30px white;
+    transition: .3s;
+}
+.caixa_de_pesquisa input{
+    height: 20px;
+    width: 90px;
+}
+i{
+    color: rgb(255, 0, 0);
+}
+
+/*Confg do lado esquerdo*/
+.ladoE {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    width: 15%;
+    height: 8000px;
+
+}
+.ladoE h1 {
+    color: rgb(255, 255, 255);
+
+}
+.ladoE a{
+    margin: 20px;
+}
+.ladoE button {
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
